@@ -57,3 +57,14 @@ ScrollReveal().reveal(".deals-card", {
     ...scrollRevealOption,
     interval: 500,
 })
+
+ScrollReveal().reveal(".about-img img", {
+    ...scrollRevealOption,
+    interval: 500,
+})
+
+ScrollReveal().reveal(".about-card", {
+    duration:1000,
+    interval: 500,
+    delay: 500,
+})
