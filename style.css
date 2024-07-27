@@ -116,6 +116,7 @@ nav {
     transition: 0.5s;
     z-index: -1;
     transform: translateY(-100%);
+    text-transform: capitalize;
 }
 
 .nav-links.open {
@@ -130,8 +131,127 @@ nav {
 .nav-search {
     display: none;
 }
+
+.header-container {
+    display: grid;
+    overflow: hidden;
+}
+
+.header-img {
+    grid-area: 1/1/2/2;
+}
+
+.header-img img {
+    max-width: 900px;
+    margin-left: auto;
+}
+
+.header-content {
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+}
+
+.header-content h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: var(--header-fonts);
+}
+
+.header-content > div {
+    max-width: 500px;
+    padding: 4rem 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
 /* main section styles */
 
 /* footer styles */
 
 /* media query section starts from here */
+
+@media screen and (min-width: 768px) {
+    nav {
+        position: static;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-header {
+        flex: 1;
+        padding: 0px;
+        background-color: transparent;
+    }
+
+    .nav-menu-btn {
+        display: none;
+    }
+
+    .nav-logo .logo {
+        color: var(--primary-color);
+    }
+
+    .nav-links {
+        position: static;
+        padding: 0px;
+        width: fit-content;
+        flex-direction: row;
+        gap: 3rem;
+        background-color: transparent;
+        transform: none;
+    }
+
+    .nav-links a {
+        color: var(--text-dark);
+    }
+
+    .nav-links a:hover {
+        color: var(--primary-color);
+    }
+
+    .nav-search {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .nav-search input {
+        padding-block: 5px;
+        border: none;
+        width: 0px;
+        outline: none;
+        color: var(--text-dark);
+        border-bottom: 1px solid var(--text-light);
+        font-size: 1rem;
+        transition: 0.3s;
+    }
+
+    .nav-search.open input {
+        width: 100%;
+        max-width: 15rem;
+    }
+
+    .nav-search span {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--text-dark);
+        cursor: pointer;
+    }
+
+    .header-container {
+        padding-top: 0px;
+    }
+}

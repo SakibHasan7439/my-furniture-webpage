@@ -12,4 +12,43 @@ menubar.addEventListener("click", ()=>{
     }else {
         menuButton.setAttribute("class", "fa-solid fa-bars");
     }
+});
+
+navLinks.addEventListener("click", ()=>{
+    navLinks.classList.remove("open");
+    menuButton.setAttribute("class", "fa-solid fa-bars");
+});
+
+const navSearch = document.querySelector(".nav-search");
+
+navSearch.addEventListener("click", ()=>{
+    navSearch.classList.toggle("open")
+});
+
+
+const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: "1000"
+};
+
+ScrollReveal().reveal(".header-img img", {
+    ...scrollRevealOption,
+    origin: "top",
+});
+
+ScrollReveal().reveal(".header-content div", {
+    duration: 1000,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".header-content h1", {
+    ...scrollRevealOption,
+    origin:"left",
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".header-content p", {
+    ...scrollRevealOption,
+    delay: 1500,
 })
