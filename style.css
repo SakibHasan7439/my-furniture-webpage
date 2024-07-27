@@ -172,7 +172,36 @@ nav {
     color: var(--text-light);
 }
 
-/* main section styles */
+/* main section */
+
+/* deal-section */
+.deals-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}   
+
+.hot {
+    color: rgb(255, 115, 0);
+}
+
+.deals-card span {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.deals-card h4 {
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.deals-card p {
+    color: var(--text-light);
+}
+
 
 /* footer styles */
 
@@ -254,4 +283,31 @@ nav {
     .header-container {
         padding-top: 0px;
     }
+
+    /* deals section */
+    .deals-section {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .deals-card:nth-child(1) {
+        width: 100%;
+    }
+    
+    .deals-card {
+        width: calc(33% - 2rem);
+    }
+}
+
+/* media query for a specific range of devide */
+@media screen and (min-width: 540px) and (max-width: 765px){
+    .deals-section {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .deals-card {
+        width: calc(50% - 1rem);
+    }
+
 }

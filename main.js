@@ -34,7 +34,7 @@ const scrollRevealOption = {
 
 ScrollReveal().reveal(".header-img img", {
     ...scrollRevealOption,
-    origin: "top",
+    origin: "right",
 });
 
 ScrollReveal().reveal(".header-content div", {
@@ -44,11 +44,16 @@ ScrollReveal().reveal(".header-content div", {
 
 ScrollReveal().reveal(".header-content h1", {
     ...scrollRevealOption,
-    origin:"left",
+    origin:"top",
     delay: 1000,
 });
 
 ScrollReveal().reveal(".header-content p", {
     ...scrollRevealOption,
     delay: 1500,
+})
+
+ScrollReveal().reveal(".deals-card", {
+    ...scrollRevealOption,
+    interval: 500,
 })
