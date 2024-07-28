@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Furniture Shop</title>
     <link rel="stylesheet" href="style.css">
+    <!-- font-awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swipeJs link -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- header-section -->
@@ -176,9 +181,143 @@
                     </div>
                 </div>
             </section>
-     </main>
-      <!-- footer section -->
 
+            <!-- client-say section -->
+            <section class="section-container client-section">
+                <div class="client-content">
+                    <div class="client-heading">
+                        <h2 class="section-header">What our happy clients say</h2>
+                        <p class="section-subheader">
+                            Testimonials highlighting our commitment to quality, Exceptional
+                            service & client satisfaction. 
+                        </p>
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="client-card">
+                                    <img src="assets/user-1.jpg" alt="client first image">
+                                    <div class="cards-txt">
+                                        <p>
+                                            FineFurni transform my living space with their 
+                                            beautiful and affordable furniture. The 5% cashback
+                                            was a delightful bonus.
+                                        </p>
+                                        <h4>David Miller</h4>
+                                        <h5>Real State Agent</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="client-card">
+                                    <img src="assets/user-2.jpg" alt="client first image">
+                                    <div class="cards-txt">
+                                        <p>
+                                            Exceptional quality and service! The furniture was
+                                            stunning, and the 30 day payment term made it more
+                                            incredible convenient.
+                                        </p>
+                                        <h4>Sarah Thompson</h4>
+                                        <h5>Interior Designer</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="client-card">
+                                    <img src="assets/user-3.jpg" alt="client first image">
+                                    <div class="cards-txt">
+                                        <p>
+                                            The 30 day payment terms made it easy for us to
+                                            furnish our new home without financial stress.
+                                            Highly recommended!
+                                        </p>
+                                        <h4>Michel lee</h4>
+                                        <h5>Entrepreneur</h5>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+      <!-- footer section -->
+      <footer class="footer" id="contacts">
+        <div class="section-container footer-section">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <a href="#" class="logo">FineFurni.shop</a>
+                </div>
+                <p>
+                    Join us in transforming your living spaces with furniture that blends
+                    elegance and practicality seamlessly.
+                </p>
+                <ul class="footer-socials">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#">Contract Support</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Cancelation Policy</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bar">
+            Copyright &copy; 2024 Web design. All right reserved.
+        </div>
+      </footer>
+
+      <!-- Js script link -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="https://unpkg.com/scrollreveal"></script>
       <script src="main.js"></script>
 </body>
